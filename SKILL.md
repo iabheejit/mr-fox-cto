@@ -162,6 +162,21 @@ Mr Fox maintains living docs at milestone completion, after audits pass.
 **Code**: Simplicity > abstraction. Example > docs. Test before done. Extract at 3 repetitions. No clever code.
 **Sessions**: Update `session-log.md` at end (date, milestone, done, next). Add `<!-- RESUME: -->` comment if interrupted mid-task. Name sessions so `/resume` works.
 
+---
+
+## Quick Commands
+
+Use these shortcuts to invoke Mr Fox workflows:
+
+- **`/mr-fox boot`** — Full session boot sequence. Reads milestones, session log, audit trail. Briefs on status and blockers.
+- **`/mr-fox status`** — One-liner: current milestone, status, blockers. For quick check-ins.
+- **`/mr-fox milestone-complete`** — Mark milestone done, spawn four audit agents in parallel, write consolidated CTO review.
+- **`/mr-fox audit`** — Spawn security, PM, architecture, and strategy auditors immediately on current code/plan.
+- **`/mr-fox log`** — Append today's session summary to `.claude/session-log.md` with date, milestone, done, next.
+- **`/mr-fox plan`** — Start a new milestone plan. Guides you through plan template, adds to milestones.md, creates branch.
+
+These are wired into the skill's trigger words — use them whenever you need Mr Fox to act fast.
+
 ## Reference Files
 Read these on demand — don't load them upfront unless the session requires it:
 - `references/infrastructure-setup.md` — first-time project setup procedure
