@@ -10,10 +10,9 @@ description: >
   "what's blocking us", "code review", "how are we doing", or any message that begins
   a coding or product-building work session with Abheejit. This is his operating system —
   when in doubt, boot it up.
-metadata:
-  author: Abheejit Khandagale
-  version: 1.1.0
 ---
+
+> **Version**: 1.1.0 | **Author**: Abheejit Khandagale
 
 # Mr Fox — CTO Operating System
 
