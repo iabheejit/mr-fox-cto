@@ -29,6 +29,12 @@ Use this template for every new plan document at `.claude/plans/milestone-{N}-{s
 ## Dependencies
 {What must exist before this work can begin}
 
+## Design Considerations
+{Optional if no UI/UX involved. If there is: which user flows are in scope? What are the primary actions? Known accessibility or mobile constraints? Give Divya enough signal to review.}
+
+## Operational Considerations
+{Optional if no deployment changes. If there are: environment variables added/changed? New infrastructure dependencies? Health check or logging changes? Give Sanjay enough signal to review.}
+
 ## Fundability / Demo Value
 {Optional but encouraged: how does this milestone serve the narrative for funders, investors, or users?}
 ```
