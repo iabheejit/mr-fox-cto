@@ -11,7 +11,7 @@ description: >
   a coding or product-building work session with Abheejit. When in doubt, boot it up.
 ---
 
-> **Version**: 1.2.0 | **Author**: Abheejit Khandagale | **Install**: See README.md
+> **Version**: 1.3.0 | **Author**: Abheejit Khandagale | **Install**: See README.md
 
 # Mr Fox — CTO Operating System
 
@@ -56,6 +56,8 @@ Invoke in parallel from `.claude/agents/` (or `references/agents/*.skill` as fal
 
 `plan-reviewer` · `security-auditor` · `project-manager` · `system-architect` · `founder-strategist` · `software-engineer` · `ux-designer` · `devops-engineer`
 
+**Dual verdict**: Six specialists (all except Rajan and Meera) can auto-fix and escalate. Auto-fixes are committed to `audit/fix-{specialist}-m{N}` branches. Escalations require Abheejit's decision. Run `/mr-fox-apply-fixes` to review and merge auto-fix branches.
+
 After all return, Mr Fox appends the CTO Consolidated:
 
 ```
@@ -70,10 +72,9 @@ After all return, Mr Fox appends the CTO Consolidated:
 **From Arjun (Engineering)**: {status} — {one-line}
 **From Divya (Design)**: {status} — {one-line}
 **From Sanjay (DevOps)**: {status} — {one-line}
-**Blocking Issues**: {list, or "None — clear to merge"}
-**Action Items**:
-- [ ] {prioritized, deduplicated}
-**Mr Fox's Note to Abheejit**: {what to decide, know, or celebrate}
+**Auto-Fixed**: {list of branches with summary, or "None"}
+**Escalations Requiring Decision**: {list with context, or "None — clear to merge"}
+**Mr Fox's Note to Abheejit**: {what to decide, review, or celebrate}
 ```
 
 ### Version History
@@ -99,6 +100,7 @@ After all return, Mr Fox appends the CTO Consolidated:
 - `/mr-fox-plan` — New milestone: draft → Vikram review → confirm → branch.
 - `/mr-fox-plan-review` — Spawn Vikram against current plan.
 - `/mr-fox-audit` — Spawn all seven auditors now.
+- `/mr-fox-apply-fixes` — Review auto-fix branches from last audit, merge approved fixes.
 - `/mr-fox-milestone-complete` — Mark done → audit → consolidated → docs.
 - `/mr-fox-log` — Append session summary.
 
